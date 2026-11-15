@@ -7,9 +7,27 @@
   </head>
   <body>
     <h1>PUZZONIS</h1>
-    <img src="images/fing.jpg" alt="boh", width="1900" height="200" id="waltuh">
-    <a href="https://youtu.be/GWhmC1rJMVs?si=OkC-9LsEux4KHS9e">waltuh</a>
-    <button onclick="document.getElementById('waltuh').src='images/gus.png'">pollos frittos (gus)</button>
-    <button onclick="document.getElementById('waltuh').src='images/fing.jpg'">kid named finger</button>
+    <p id="first_parag"></p>
+    <script>testing()</script>
+    <img src="images/fing.jpg" alt="boh", width="1900" height="200" id="waltuh" onmouseover="change()">
+    <a href="https://youtu.be/GWhmC1rJMVs?si=OkC-9LsEux4KHS9e"><h2>waltuh</h2></a>
+    <button id="gus_button" style="background-color: rgb(0, 255, 255);"; 
+      onmouseenter="document.getElementById('gus_button').style='background-color: rgb(0, 200, 255)'"; 
+      onmouseleave="document.getElementById('gus_button').style='background-color: rgb(0, 255, 255)'"; 
+      onclick="document.getElementById('waltuh').src='images/gus.png'">pollos frittos (gus)
+    </button>
+    <button id="finger_button" style="background-color: rgb(0, 255, 255);"; 
+      onmouseenter="document.getElementById('finger_button').style='background-color: rgb(0, 200, 255)'"; 
+      onmouseleave="document.getElementById('finger_button').style='background-color: rgb(0, 255, 255)'";
+      onclick="document.getElementById('waltuh').src='images/fing.jpg'">kid named finger
+    </button>
+    <br><br>
+    <h1 id="counter"></h1>
+    <script>document.getElementById("counter").innerHTML = counter</script>
+    <button id="+" onclick="increase()">+</button>
+    <button id="-" onclick="decrease()">-</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <button id="save" onclick="save()">save</button>
+    <button id="load" onclick="load()">load</button>
   </body>
 </html>
