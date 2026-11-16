@@ -20,6 +20,9 @@ function increase() {
 }
 function decrease() {
     counter--;
+    if(counter < 0){
+        counter = 0;
+    }
     document.getElementById("counter").innerHTML = counter;
 
 }
@@ -36,5 +39,4 @@ function save(){
 function load(){
     counter = save_state;
     document.getElementById("counter").innerHTML = counter;
-
 }
